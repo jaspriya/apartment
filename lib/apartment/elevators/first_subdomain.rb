@@ -9,7 +9,7 @@ module Apartment
     #     - example2.something.domain.com     => example2
     class FirstSubdomain < Subdomain
       def parse_tenant_name(reques)
-        super.split('.')[0] unless super.nil?
+        super.spli('.')[0] unless super.nil?
       end
     end
   end
